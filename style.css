@@ -708,7 +708,7 @@ textarea {
 
 .hero__title {
   width: 100%;
-  font-size: 20px;
+  font-size: 26px;
   line-height: 1.62;
   font-weight: 900;
   letter-spacing: 0.06em;
@@ -726,15 +726,26 @@ textarea {
 @media screen and (min-width: 1200px) {
   .hero__title {
     width: 790px;
-    font-size: 44px;
+    font-size: 30px;
     line-height: 1.36;
   }
 }
 
+.hero__title__menagement {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -30%);
+width: 170px;
+}
+.img-hero-container{
+  position: relative;
+}
 .hero__img{
     margin-left: auto;
     margin-right: auto;
     opacity: 0.8;
+    position: relative;
 }
 
 /* logo */

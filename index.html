@@ -35,12 +35,6 @@
         <nav class="mobile" aria-expanded="false" data-menu>
           <div class="header-nav">
 
-        <button class="menu--close" type="button" aria-expanded="false" aria-controls="mobile" data-menu-button>
-          <svg width="40" height="40">
-            <use href = "./images/menu.svg#close"></use>
-          </svg>
-        </button>
-
 
 
           <ul class="navi">
@@ -53,7 +47,7 @@
               <a href="./index.html" class="navi__link navi__link--active">Bazy danych</a>
             </li>
             <li class="navi__item">
-              <a href="" class="navi__link">Pracownicy</a>
+              <a href="./index.html" class="navi__link">Pracownicy</a>
             </li>
           </ul>
 
@@ -89,10 +83,10 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1 class="hero__title">Nie martł się o infrastrukture - został to dla zespołu Facility</h1>
-                <a href="https://dsvcorp-my.sharepoint.com/personal/viacheslav_antiushyn_dsv_com/Documents/General%20Facility/DSV%20Facility.xlsm?web=1" >
-                <img src="./image/hero.jpg" alt="facility menegment" class="hero__img">
-                 </a>
+                <h1 class="hero__title">NIE MARTW SIĘ O INFRASTRUKTURE - ZOSTAW TO DLA ZESPOŁU FACILITY</h1>
+                <div class="img-hero-container">
+                <img src="./image/hero.jpg" alt="facility menegment" class="hero__img" width="220px">
+                <h2 class="hero__title__menagement">DSV Solutions<br/>Facility Management</h2></div>
             </div>
             </section>
             <section class="section">
@@ -127,11 +121,11 @@
                   />
                 </picture>
                   <p class="galery__img-text">
-                Baza z danymi z faktur statystyką oraz linkiem na samą fakturę
+                    Baza zawierająca wszystkie dane z faktur, ile i za co zapłaciliśmy. W tym ważne są 2 arkuszy:
                   </p>
                 </div>
                 <div class="galery__box galery__box--bottom">
-                  <h2 class="galery__title">Baza rozliczeń</h2>
+                  <h2 class="galery__title">Rozliczenia</h2>
                   <p class="galery__text">Faktury</p>
                 </div>
               </a>
@@ -159,12 +153,12 @@
                   />
                 </picture>
                   <p class="galery__img-text">
-                Dane o zużyciu media, statystuka oraz wizualizacja tych danych
+                    Baza zawierająca informacje o zużyciu wszystkich mediów. 
                   </p>
                 </div>
                 <div class="galery__box">
                   <h2 class="galery__title">
-                    Zużycie media
+                    Zużycie mediów
                   </h2>
                   <p class="galery__text">Gaz, Prąd, Woda, i t.d.</p>
                 </div>
@@ -193,12 +187,12 @@
                   />
                  </picture>
                   <p class="galery__img-text">
-                Baza zawiera dane o przewidywanych kosztach oraz zużyci media dla wszystkich działów
+                Baza w której estymujemy zużycie oraz koszt za media na następny miesiąc
                   </p>
                 </div>
                 <div class="galery__box">
                   <h2 class="galery__title">Estymacje</h2>
-                  <p class="galery__text">Estymowanie kosztuw na media</p>
+                  <p class="galery__text">Estymowanie kosztów</p>
                 </div>
               </a>
             </li>
@@ -207,6 +201,35 @@
         </div>
       </section>
     </main>
+    <script>
+      (() => {
+      
+          const menuBtnRef = document.querySelector("[data-menu-button]");
+        
+          const mobileMenuRef = document.querySelector("[data-menu]");
+        
+        
+        
+          menuBtnRef.addEventListener("click", () => {
+        
+            const expanded =
+        
+            menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+        
+        
+        
+            menuBtnRef.classList.toggle("is-open");
+        
+            menuBtnRef.setAttribute("aria-expanded", !expanded);
+        
+        
+        
+            mobileMenuRef.classList.toggle("is-open");
+        
+          });
+        
+        })();
+      </script>
     <footer class=" footer">
         <div class="container header__container">
             <a href="https://www.dsv.com/" class="logo">
