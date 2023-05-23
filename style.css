@@ -737,6 +737,12 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -30%);
 width: 170px;
+color: #FFFFFF;
+}
+
+.hero__title__menagement:focus,
+.hero__title__menagement:hover{
+  color: green;
 }
 .img-hero-container{
   position: relative;
