@@ -1602,9 +1602,9 @@ color: #FFFFFF;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 16px;
     display: block;
+    margin-right: 50px;
   }
   .navi__link--active::after {
     display: inline-block;
@@ -1676,4 +1676,10 @@ color: #FFFFFF;
   .contaсts__link:hover .contaсts__icon, .contaсts__link:focus .contaсts__icon {
     fill: var(--acent-color);
   }
+.pollution-range-title-text{
+  width: 150px;
+}
+.social-page{
+  display: flex;
+}
 }
