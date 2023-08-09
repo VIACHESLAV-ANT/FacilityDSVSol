@@ -5,7 +5,7 @@
     }
       , a = {
         pl: 0.1578,
-        wrl: 9.51,
+        wrl: 1268.4,
         limit: 999999999,
         prefix: "+ ",
         prefixEnd: "> ",
