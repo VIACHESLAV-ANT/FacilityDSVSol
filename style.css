@@ -1676,12 +1676,10 @@ color: #FFFFFF;
   .contaсts__link:hover .contaсts__icon, .contaсts__link:focus .contaсts__icon {
     fill: var(--acent-color);
   }
-  
+}
 .pollution-range-title-text{
   width: 150px;
 }
 .social-page{
   display: flex;
-}
-
 }
