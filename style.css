@@ -1665,7 +1665,7 @@ color: #FFFFFF;
   height: 100%;
   object-fit: cover;
   z-index: 0;
-  opacity: 0.55; /* lekko przyciemni tło, możesz dostosować */
+  opacity: 0.55;
 }
 
 .hero .container,
@@ -1674,3 +1674,4 @@ color: #FFFFFF;
   position: relative;
   z-index: 1; /* żeby tekst był nad filmem */
 }
+
